@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'MuseoSlab500';
+    src: url('fonts/Museo_Slab_500-webfont.eot');
+    src: url('fonts/Museo_Slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Museo_Slab_500-webfont.woff') format('woff'),
+         url('fonts/Museo_Slab_500-webfont.ttf') format('truetype'),
+         url('fonts/Museo_Slab_500-webfont.svg#MuseoSlab500') format('svg');
+    font-weight: normal;
+    font-style: normal; }
+
+body { 
+	font: 87.5%/1.62em "proxima-nova-1","proxima-nova-2", Helvetica, Arial, sans-serif; 
+	color: #f1f1f1;
+	background: #151515; }
+	
+.entry {
+	width: 350px;
+	float: left;
+	padding: 20px;
+	margin: 0 20px 10px 30px;
+	height: 300px;
+	border-left: 4px rgba(102, 102, 102, 0.4) solid; }
+	
+.date {
+	font-family: 'MuseoSlab500';
+	font-size: 2em;
+	position: absolute;
+	margin: 65px 0 0 -55px;
+	-webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.description {
+	background: rgba(45, 45, 45, 0.8);
+	padding: 20px; }
