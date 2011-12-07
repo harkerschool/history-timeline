@@ -31,9 +31,7 @@ $(function(){
 	//
 	// Count number of DESCRIPTIONS within each ENTRY
 	//
-	/* Need to get height of description;
-	# of descriptions within each entry;
-	get total height of descriptions within a given entry and subtract it from the height of the entry */
+	// Need to get total height of descriptions within a given entry and subtract it from the height of the entry; then add 15 and pass that final number to the marginTop of the _first_ description within the entry.
 	
 	$('.entry').each(function(){
 		$('description').each(function(){
