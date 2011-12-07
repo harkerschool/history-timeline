@@ -34,11 +34,12 @@ $(function(){
 	/* Need to get height of description;
 	# of descriptions within each entry;
 	get total height of descriptions within a given entry and subtract it from the height of the entry */
+	
 	$('.entry').each(function(){
-		var descriptionCount = $('.description').length;
 		$('description').each(function(){
+			// The description heights vary; must be saved somehow so that we can calculate the total height of descriptions;
+			// descriptionHeight1 + descriptionHeight2 = totalHeight
 			var descriptionHeight = $(this).outerHeight;
-			
 		});
 	});
 });
