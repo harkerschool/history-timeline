@@ -19,7 +19,8 @@ $(function(){
 	//
 	// Remove bottom margin off of last DESCRIPTION 
 	//
-	$('.entry').last().children('.description').css('margin-bottom', 0);
+	$('.entry').last().children().css('padding-bottom', 0);
+	$('.entry').last().children().css('margin-bottom', 0);
 	
 	//
 	// Grab height of WRAPPER element 
