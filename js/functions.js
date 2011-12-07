@@ -17,16 +17,20 @@ $(function(){
 	$('body').css('width', bodyLength);
 	
 	//
+	// Remove bottom margin off of last ENTRY 
+	//
+	$('.entry').last().css('margin-bottom', 0);
+	
+	//
 	// Grab height of WRAPPER element 
 	//
 	var eventWrapper = $('.event-wrapper');
 	var wrapperHeight = eventWrapper.outerHeight(true);
 	
 	//
-	// Pass WRAPPER element height to body and ENTRY element 
+	// Pass WRAPPER element height to BODY element 
 	//
 	$('body').css('height', wrapperHeight);
-	$('.entry').css('height', wrapperHeight);
 	
 	//
 	// Count number of DESCRIPTIONS within each ENTRY
@@ -36,11 +40,12 @@ $(function(){
 	$('.entry').each(function(){
 		var totalHeight = 0;
 		$(this).children('.description').each(function(){
-			var descriptionHeight = $(this).outerHeight;
+			var descriptionHeight = $(this).outerHeight(true);
 			totalHeight += descriptionHeight;
 		});
 		
-		var newMargin = wrapperHeight - totalHeight;
-		$(this).children('.description').css('margin-top', newMargin);
+		var newMargin = wrapperHeight - totalHeight - 20;
+		$(this).css('margin-top', newMargin);
+		$(this).css('height', totalHeight);
 	});
 });
