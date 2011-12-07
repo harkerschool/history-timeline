@@ -11,21 +11,24 @@
 body { 
 	font: 87.5%/1.62em "proxima-nova-1","proxima-nova-2", Helvetica, Arial, sans-serif; 
 	color: #f1f1f1;
-	background: #151515; }
+	background: #151515;
+	border-bottom: 4px rgba(102, 102, 102, 0.4) solid; }
+
+.event-wrapper {
+	overflow: auto; }
 	
 .entry {
 	width: 350px;
 	float: left;
-	padding: 20px;
+	padding: 0 20px;
 	margin: 0 20px 10px 30px;
-	height: 300px;
 	border-left: 4px rgba(102, 102, 102, 0.4) solid; }
 	
 .date {
 	font-family: 'MuseoSlab500';
 	font-size: 2em;
 	position: absolute;
-	margin: 65px 0 0 -55px;
+	margin: 72px 0 0 -55px;
 	-webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
@@ -34,9 +37,9 @@ body {
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
 
 .description {
 	background: rgba(45, 45, 45, 0.8);
-	padding: 20px; }
+	padding: 20px;
+	margin-top: 10px; }
