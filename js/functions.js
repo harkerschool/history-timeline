@@ -34,11 +34,13 @@ $(function(){
 	// Need to get total height of descriptions within a given entry and subtract it from the height of the entry; then add 15 and pass that final number to the marginTop of the _first_ description within the entry.
 	
 	$('.entry').each(function(){
-		$('description').each(function(){
-			// The description heights vary; must be saved somehow so that we can calculate the total height of descriptions;
-			// descriptionHeight1 + descriptionHeight2 = totalHeight
+		var totalHeight;
+		$(this).children('.description').each(function(){
 			var descriptionHeight = $(this).outerHeight;
-			var totalHeight = ;
+			totalHeight += descriptionHeight;
 		});
+		
+		var newMargin = wrapperHeight - totalHeight;
+		$('.description').css('margin-top', newMargin);
 	});
 });
