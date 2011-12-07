@@ -38,6 +38,7 @@ $(function(){
 			// The description heights vary; must be saved somehow so that we can calculate the total height of descriptions;
 			// descriptionHeight1 + descriptionHeight2 = totalHeight
 			var descriptionHeight = $(this).outerHeight;
+			var totalHeight = ;
 		});
 	});
 });
